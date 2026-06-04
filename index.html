@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Tracker App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🏋️ Fitness Tracker</h1>
+
+    <div class="input-box">
+      <input type="number" id="steps" placeholder="Steps walked">
+      <input type="text" id="workout" placeholder="Workout name">
+      <input type="number" id="minutes" placeholder="Workout minutes">
+      <button onclick="addData()">Add</button>
+    </div>
+
+    <div class="stats">
+      <h2>📊 Progress Dashboard</h2>
+
+      <p>Total Steps: <span id="totalSteps">0</span></p>
+      <p>Total Calories: <span id="totalCalories">0</span></p>
+
+      <!-- PROGRESS BAR -->
+      <div class="progress-container">
+        <p>Daily Goal Progress</p>
+        <div class="progress-bar">
+          <div id="progressFill"></div>
+        </div>
+        <p id="progressText">0%</p>
+      </div>
+    </div>
+
+    <ul id="list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
